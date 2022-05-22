@@ -5,6 +5,7 @@
   color: rgba(205, 187, 212, 0.795);
   font-family: "Poppins", sans-serif;
 }
+
 ul {
   list-style: none;
   font-size: 20px;
@@ -44,13 +45,29 @@ header ul li {
 .container .name h5 {
   font-size: 25px;
 }
+.flex {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.flex div {
+  border: 3px solid rgba(205, 187, 212, 0.795);
+  margin: 10px;
+  flex-basis: 100%;
+}
+.flex img {
+  max-width: 250px;
+}
+
 #about p {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 .form {
   width: 40%;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 .form input {
   width: 50%;
@@ -60,4 +77,11 @@ header ul li {
 }
 #imagem {
   width: 150px;
+}
+
+footer {
+  background-color: rgba(205, 187, 212, 0.795);
+  height: 70px;
+  font-size: 25px;
+  color: black;
 }
