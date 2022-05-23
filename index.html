@@ -15,10 +15,9 @@
 
 <body>
   <header>
-    <div id="colorheader">
 
-    </div>
-    <div> <img src="./img/unnamed (1).png" alt="Logo Larissa" id="imagem">
+    <div>
+      <img src="./img/unnamed (1).png" alt="Logo Larissa" id="imagem">
     </div>
     <ul>
       <li> <a href="https://github.com/annalare " target="_blank">Github </a> </li>
@@ -33,8 +32,8 @@
         <h1> Larissa Mendes</h1>
         <h5> Front-End Developer</h5>
       </div>
-      <div id="arrow">
-        <i class="fa-solid fa-angle-down"></i>
+      <div onclick="displayAbout" id="arrow">
+        <i id="animation" class="fa-solid fa-angle-down"></i>
       </div>
       <div id="about">
         <p>
@@ -80,7 +79,12 @@
     </div>
 
   </main>
-
+  <script>
+    function displayAbout() {
+      var arrow = document.getElementById('animation')
+      arrow.classList.toggle('rotate');
+    }
+  </script>
   <footer>
     &copy;Larissa Mendes
   </footer>
